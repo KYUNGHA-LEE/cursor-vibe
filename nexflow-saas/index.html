@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexFlow — AI 워크플로우 자동화 플랫폼</title>
+  <meta name="description" content="팀의 반복 업무를 AI가 자동화합니다. NexFlow로 생산성을 10배 높이세요.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+  <div class="mesh-gradient"></div>
+  <div class="cursor-glow"></div>
+
+  <div class="page-wrapper">
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">⚡</span>
+          NexFlow
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">홈</a></li>
+          <li><a href="features.html">기능</a></li>
+          <li><a href="pricing.html">요금제</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="pricing.html" class="btn btn-ghost">로그인</a>
+          <a href="pricing.html" class="btn btn-primary btn-magnetic">무료로 시작하기</a>
+        </div>
+        <button class="mobile-toggle" aria-label="메뉴">☰</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="dot"></span>
+            AI 2.0 업데이트 — 지금 무료 체험 가능
+          </div>
+          <h1 class="reveal reveal-delay-1">
+            반복 업무는 AI에게,<br>
+            <span class="gradient-text">창의적 일에 집중하세요</span>
+          </h1>
+          <p class="hero-sub reveal reveal-delay-2">
+            NexFlow는 팀의 워크플로우를 AI로 자동화합니다.
+            코드 한 줄 없이, 드래그 앤 드롭만으로 업무를 10배 빠르게.
+          </p>
+          <div class="hero-cta reveal reveal-delay-3">
+            <a href="pricing.html" class="btn btn-primary btn-lg btn-magnetic">14일 무료 체험 →</a>
+            <a href="features.html" class="btn btn-ghost btn-lg">기능 둘러보기</a>
+          </div>
+          <div class="hero-stats reveal reveal-delay-4">
+            <div class="stat-item">
+              <div class="stat-number" data-count="12000" data-suffix="+">0</div>
+              <div class="stat-label">활성 팀</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="340" data-suffix="%">0</div>
+              <div class="stat-label">평균 생산성 향상</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="99" data-suffix=".9%">0</div>
+              <div class="stat-label">가동률 SLA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-preview reveal reveal-delay-5">
+          <div class="preview-frame">
+            <div class="preview-bar">
+              <span class="preview-dot red"></span>
+              <span class="preview-dot yellow"></span>
+              <span class="preview-dot green"></span>
+            </div>
+            <div class="preview-content">
+              <div class="preview-sidebar">
+                <div class="preview-nav-item active"></div>
+                <div class="preview-nav-item"></div>
+                <div class="preview-nav-item"></div>
+                <div class="preview-nav-item"></div>
+              </div>
+              <div class="preview-main">
+                <div class="preview-card">
+                  <div class="preview-card-header"></div>
+                  <div class="preview-chart">
+                    <div class="chart-bar"></div>
+                    <div class="chart-bar"></div>
+                    <div class="chart-bar"></div>
+                    <div class="chart-bar"></div>
+                    <div class="chart-bar"></div>
+                    <div class="chart-bar"></div>
+                    <div class="chart-bar"></div>
+                    <div class="chart-bar"></div>
+                  </div>
+                </div>
+                <div class="preview-card">
+                  <div class="preview-card-header" style="width:60%"></div>
+                  <div style="height:40px;background:var(--glass);border-radius:8px;margin-top:8px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">핵심 가치</span>
+          <h2 class="section-title">왜 수천 개 팀이<br>NexFlow를 선택할까요?</h2>
+          <p class="section-desc">복잡한 자동화를 누구나 쉽게. 개발자 없이도 엔터프라이즈급 워크플로우를 구축하세요.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card reveal" data-tilt>
+            <div class="feature-icon">🚀</div>
+            <h3>5분 만에 시작</h3>
+            <p>템플릿 갤러리에서 원하는 워크플로우를 선택하고, 클릭 몇 번으로 바로 실행하세요.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1" data-tilt>
+            <div class="feature-icon">🤖</div>
+            <h3>AI 자동 최적화</h3>
+            <p>사용 패턴을 학습하는 AI가 워크플로우를 지속적으로 개선하고 병목을 자동 해소합니다.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2" data-tilt>
+            <div class="feature-icon">🔗</div>
+            <h3>500+ 앱 연동</h3>
+            <p>Slack, Notion, Google Workspace, Salesforce 등 주요 도구와 원클릭 연동됩니다.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1" data-tilt>
+            <div class="feature-icon">📊</div>
+            <h3>실시간 대시보드</h3>
+            <p>팀 생산성 지표를 한눈에. ROI를 데이터로 증명하고 의사결정을 가속하세요.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2" data-tilt>
+            <div class="feature-icon">🔒</div>
+            <h3>엔터프라이즈 보안</h3>
+            <p>SOC 2 Type II, ISO 27001 인증. SSO, 감사 로그, 데이터 암호화를 기본 제공합니다.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-3" data-tilt>
+            <div class="feature-icon">⚡</div>
+            <h3>99.9% 가동률</h3>
+            <p>글로벌 CDN과 멀티 리전 아키텍처로 미션 크리티컬 워크플로우도 안심하고 운영하세요.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">고객 후기</span>
+          <h2 class="section-title">이미 변화를 경험한 팀들</h2>
+        </div>
+        <div class="testimonials">
+          <div class="testimonial-card reveal">
+            <p class="testimonial-text">"NexFlow 도입 후 주간 보고서 작성 시간이 8시간에서 30분으로 줄었습니다. 팀원들이 정말 좋아해요."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">김</div>
+              <div>
+                <div class="author-name">김서연</div>
+                <div class="author-role">프로덕트 매니저 · 테크스타트업</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-1">
+            <p class="testimonial-text">"500개 앱 연동 덕분에 기존 도구를 그대로 쓰면서 자동화를 구축할 수 있었어요. 마이그레이션 비용 제로."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">박</div>
+              <div>
+                <div class="author-name">박준혁</div>
+                <div class="author-role">CTO · 핀테크 기업</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-2">
+            <p class="testimonial-text">"AI 최적화 기능이 놀라워요. 우리가 몰랐던 비효율을 AI가 찾아내고, 자동으로 워크플로우를 개선해줍니다."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">이</div>
+              <div>
+                <div class="author-name">이민지</div>
+                <div class="author-role">운영팀장 · 이커머스</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>지금 시작하면 14일 무료</h2>
+          <p>신용카드 없이 바로 체험하세요. 언제든 취소 가능합니다.</p>
+          <a href="pricing.html" class="btn btn-primary btn-lg btn-magnetic">무료 체험 시작하기 →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <span class="logo-icon">⚡</span>
+              NexFlow
+            </a>
+            <p>AI 기반 워크플로우 자동화로 팀의 잠재력을 최대화하세요.</p>
+          </div>
+          <div class="footer-col">
+            <h4>제품</h4>
+            <ul>
+              <li><a href="features.html">기능</a></li>
+              <li><a href="pricing.html">요금제</a></li>
+              <li><a href="#">앱 연동</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>회사</h4>
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">블로그</a></li>
+              <li><a href="#">채용</a></li>
+              <li><a href="#">문의</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>지원</h4>
+            <ul>
+              <li><a href="#">도움말</a></li>
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">상태</a></li>
+              <li><a href="#">보안</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 NexFlow Inc. All rights reserved.</span>
+          <span>개인정보처리방침 · 이용약관</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요금제 — NexFlow</title>
+  <meta name="description" content="팀 규모에 맞는 NexFlow 요금제를 선택하세요. 14일 무료 체험.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+  <div class="mesh-gradient"></div>
+  <div class="cursor-glow"></div>
+
+  <div class="page-wrapper">
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">⚡</span>
+          NexFlow
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="features.html">기능</a></li>
+          <li><a href="pricing.html" class="active">요금제</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#" class="btn btn-ghost">로그인</a>
+          <a href="#" class="btn btn-primary btn-magnetic" data-open-modal data-plan="프로">무료로 시작하기</a>
+        </div>
+        <button class="mobile-toggle" aria-label="메뉴">☰</button>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="reveal">팀에 맞는 <span class="gradient-text">완벽한 플랜</span></h1>
+        <p class="reveal reveal-delay-1">14일 무료 체험 · 신용카드 불필요 · 언제든 업그레이드/다운그레이드</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0">
+      <div class="container">
+        <div class="pricing-toggle reveal">
+          <span class="toggle-label active" data-period="monthly">월간 결제</span>
+          <div class="toggle-switch" role="switch" aria-label="연간 결제 토글">
+            <div class="toggle-knob"></div>
+          </div>
+          <span class="toggle-label" data-period="annual">연간 결제</span>
+          <span class="save-badge">20% 절약</span>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="plan-name">스타터</div>
+            <div class="plan-price">
+              <span class="currency">₩</span><span data-monthly="29000" data-annual="23200">29,000</span>
+              <span class="period">/월</span>
+            </div>
+            <p class="plan-desc">소규모 팀과 개인을 위한 기본 플랜</p>
+            <ul class="plan-features">
+              <li>워크플로우 10개</li>
+              <li>월 1,000 실행</li>
+              <li>기본 앱 연동 50+</li>
+              <li>이메일 지원</li>
+              <li class="disabled">AI 에이전트</li>
+              <li class="disabled">고급 분석</li>
+            </ul>
+            <button class="btn btn-ghost" style="width:100%" data-open-modal data-plan="스타터">시작하기</button>
+          </div>
+
+          <div class="pricing-card featured reveal reveal-delay-1">
+            <span class="pricing-badge">가장 인기</span>
+            <div class="plan-name">프로</div>
+            <div class="plan-price">
+              <span class="currency">₩</span><span data-monthly="79000" data-annual="63200">79,000</span>
+              <span class="period">/월</span>
+            </div>
+            <p class="plan-desc">성장하는 팀을 위한 올인원 솔루션</p>
+            <ul class="plan-features">
+              <li>워크플로우 무제한</li>
+              <li>월 50,000 실행</li>
+              <li>전체 앱 연동 500+</li>
+              <li>우선 지원 (24시간)</li>
+              <li>AI 에이전트 5개</li>
+              <li>고급 분석 대시보드</li>
+            </ul>
+            <button class="btn btn-primary btn-magnetic" style="width:100%" data-open-modal data-plan="프로">14일 무료 체험</button>
+          </div>
+
+          <div class="pricing-card reveal reveal-delay-2">
+            <div class="plan-name">엔터프라이즈</div>
+            <div class="plan-price">
+              <span style="font-size:2rem">맞춤 견적</span>
+            </div>
+            <p class="plan-desc">대규모 조직을 위한 프리미엄 플랜</p>
+            <ul class="plan-features">
+              <li>무제한 워크플로우 &amp; 실행</li>
+              <li>전용 AI 에이전트</li>
+              <li>SSO &amp; SAML</li>
+              <li>전담 CSM 배정</li>
+              <li>SLA 99.99% 보장</li>
+              <li>온프레미스 옵션</li>
+            </ul>
+            <button class="btn btn-ghost" style="width:100%" data-open-modal data-plan="엔터프라이즈">영업팀 문의</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">자주 묻는 질문</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              무료 체험 후 자동 결제되나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>아니요. 14일 무료 체험 기간 동안 신용카드를 등록하지 않아도 됩니다. 체험 종료 후 유료 전환을 원하실 때 직접 결제 정보를 입력하시면 됩니다.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-question">
+              플랜 변경은 언제든 가능한가요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>네, 언제든 업그레이드 또는 다운그레이드가 가능합니다. 업그레이드 시 차액은 일할 계산되며, 다운그레이드는 다음 결제 주기부터 적용됩니다.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-2">
+            <button class="faq-question">
+              환불 정책은 어떻게 되나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>유료 구독 시작 후 30일 이내 전액 환불을 보장합니다. 만족하지 않으시면 고객 지원팀에 연락해주세요.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-3">
+            <button class="faq-question">
+              데이터는 안전하게 보관되나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>모든 데이터는 AES-256 암호화로 저장되며, SOC 2 Type II 및 ISO 27001 인증을 받았습니다. 한국 리전(AWS ap-northeast-2)에서 데이터를 처리합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>아직 고민 중이신가요?</h2>
+          <p>14일 무료 체험으로 직접 경험해보세요. 신용카드 없이 바로 시작할 수 있습니다.</p>
+          <button class="btn btn-primary btn-lg btn-magnetic" data-open-modal data-plan="프로">무료 체험 시작 →</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <span class="logo-icon">⚡</span>
+              NexFlow
+            </a>
+            <p>AI 기반 워크플로우 자동화로 팀의 잠재력을 최대화하세요.</p>
+          </div>
+          <div class="footer-col">
+            <h4>제품</h4>
+            <ul>
+              <li><a href="features.html">기능</a></li>
+              <li><a href="pricing.html">요금제</a></li>
+              <li><a href="#">앱 연동</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>회사</h4>
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">블로그</a></li>
+              <li><a href="#">채용</a></li>
+              <li><a href="#">문의</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>지원</h4>
+            <ul>
+              <li><a href="#">도움말</a></li>
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">상태</a></li>
+              <li><a href="#">보안</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 NexFlow Inc. All rights reserved.</span>
+          <span>개인정보처리방침 · 이용약관</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Payment Modal -->
+  <div class="modal-overlay" id="payment-modal">
+    <div class="modal">
+      <h3>구독 시작하기</h3>
+      <p><span data-selected-plan">프로</span> — 14일 무료 체험 후 결제됩니다.</p>
+      <form class="modal-form" onsubmit="event.preventDefault(); alert('🎉 NexFlow 무료 체험이 시작되었습니다! (데모)'); document.getElementById('payment-modal').classList.remove('open');">
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" placeholder="name@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="company">회사명</label>
+          <input type="text" id="company" placeholder="회사 또는 팀 이름">
+        </div>
+        <div class="form-group">
+          <label for="card">결제 수단 (체험 후)</label>
+          <input type="text" id="card" placeholder="카드 번호 — 체험 기간에는 청구되지 않습니다">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" data-close-modal>취소</button>
+          <button type="submit" class="btn btn-primary btn-magnetic">무료 체험 시작</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
